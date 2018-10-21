@@ -1,0 +1,18 @@
+name: 'Will Tura'
+description: 'Dit thema is geweldig'
+type: theme
+core: 8.x
+
+libraries:
+  - willtura/global-css
+  - willtura/fontawesome
+  - willtura/bootstrap
+  - willtura/global-js
+
+regions:
+  content: 'Main content'
+  header: 'Header'
+  sidebar: 'Sidebar'
+  Footer: 'Footer'
+  Subheader-left: 'Subheader left'
+  Subheader-right: 'Subheader right'

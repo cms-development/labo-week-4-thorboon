@@ -1,0 +1,43 @@
+  <header role="banner">
+    {{ page.header }}
+    {{ page.navigation_menu }}
+  </header>
+
+<div class="content-spacing"></div>
+<div class="container">
+
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+    <div class="row">
+      <div class="layout-subheader-left col-sm">
+        {{ page.Subheader-left }}
+      </div>
+
+      <div class="layout-subheader-right col-sm">
+        {{ page.Subheader-right }}
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="layout-content col-8">
+        {{ page.content }}
+      </div>{# /.layout-content #}
+
+      {% if page.sidebar %}
+        <aside class="layout-sidebar-first col-4" role="complementary">
+          {{ page.sidebar }}
+        </aside>
+      {% endif %}
+    </div>
+  </main>
+</div>{# /container #}
+
+  {% if page.footer %}
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        {{ page.footer }}
+      </div>
+    </footer>
+  {% endif %}
+
+

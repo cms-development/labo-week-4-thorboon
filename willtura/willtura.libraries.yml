@@ -1,0 +1,22 @@
+global-css:
+  css:
+    theme:
+      css/style.css: {}
+
+
+bootstrap:
+  remote: https://getbootstrap.com/
+  version: 4.1.3
+  license:
+    name: MIT
+    url: http://example.com/LICENSE.txt
+    gpl-compatible: true
+  css:
+    theme:
+      https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css: {}
+
+global-js:
+  js:
+    js/main.js: {}
+  dependecies:
+    - core/jquery
